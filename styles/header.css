@@ -1,0 +1,73 @@
+header {
+    position: fixed;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: var(--primary-light) solid 2px;
+    color: var(--text-light);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: ease-in 0.3s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--accent-gold);
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: "Forum", sans-serif;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.menu-btn:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin-left: 10px;
+    box-shadow: 0 6px 0 white, 0 12px 0 white;
+}
+
+@media (max-width: 768px) {
+    .contact-btn {
+        font-size: 0.7rem;
+        padding: 10px 10px;
+        background-color: transparent;
+        border: var(--primary-light) solid 2px;
+    }
+}

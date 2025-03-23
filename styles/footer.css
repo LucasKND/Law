@@ -1,0 +1,192 @@
+footer {
+    background-color: var(--background-dark);
+    color: #ffffff;
+    padding: 60px 0 30px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-about h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #c0a06f;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-name i {
+    font-size: 30px;
+    color: #c0a06f;
+}
+
+.company-name h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #c0a06f;
+    font-family: 'Montserrat';
+}
+
+.footer-about p {
+    color: #dddddd;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--accent-gold);
+    color: var(--primary-dark);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--text-light);
+    color: var(--accent-gold);
+    transform: translateY(-5px);
+}
+
+.social-links i {
+    font-size: 20px;
+}
+
+/* Seção Localização */
+.footer-location h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c0a06f;
+}
+
+.map-container {
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.address {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.address i {
+    color: #c0a06f;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.address p {
+    color: #dddddd;
+    font-size: 14px;
+}
+
+/* Seção Contatos */
+.footer-contact h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c0a06f;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    color: #dddddd;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #c0a06f;
+}
+
+.contact-info i {
+    color: #c0a06f;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Seção Horários */
+.footer-hours h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #c0a06f;
+}
+
+.hours-item {
+    display: flex;
+    margin-bottom: 10px;
+    color: #dddddd;
+    font-size: 14px;
+}
+
+.hours-item i {
+    color: #c0a06f;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.closed {
+    color: #c0a06f;
+    font-weight: 600;
+}
+
+/* Borda inferior */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}

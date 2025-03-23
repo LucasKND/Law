@@ -1,0 +1,244 @@
+/* General animation classes */
+.initially-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Animation */
+.header-slide-down {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.header-slide-down.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* About section animation */
+.slide-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation delays for sequencing */
+.about-content .section-subtitle.active {
+    transition-delay: 0.2s;
+}
+
+.about-content h2.active {
+    transition-delay: 0.6s;
+}
+
+.about-content .about-text.active {
+    transition-delay: 1s;
+}
+
+.about-content .discover-more-btn.active {
+    transition-delay: 1.4s;
+}
+
+/* Practice Areas section animations - slide up */
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay for sequential animation */
+.section-header .section-subtitle.active {
+    transition-delay: 0.2s;
+}
+
+.section-header h2.active {
+    transition-delay: 0.6s;
+}
+
+/* Card content animations */
+.slide-up-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-up-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different delays for card titles and paragraphs */
+.card-content h3.active {
+    transition-delay: 0.3s;
+}
+
+.card-content p.active {
+    transition-delay: 0.5s;
+}
+
+/* Contact section animations */
+.contact-slide-up {
+    opacity: 0 !important; /* Force initial state */
+    transform: translateY(50px) !important;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out !important;
+    will-change: opacity, transform; /* Performance optimization */
+}
+
+.contact-slide-up.active {
+    opacity: 1 !important; /* Force active state */
+    transform: translateY(0) !important;
+}
+
+/* Animation delays for contact section sequencing */
+.contact-section__icon.active {
+    transition-delay: 0.1s !important;
+}
+
+.contact-section__heading.active {
+    transition-delay: 0.4s !important;
+}
+
+.contact-section__subheading.active {
+    transition-delay: 0.7s !important;
+}
+
+.contact-section__button.active {
+    transition-delay: 1s !important;
+}
+
+/* FAQ section animations */
+.faq-slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.faq-slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation delays for FAQ section sequencing */
+.faq-section__label.active {
+    transition-delay: 0.1s;
+}
+
+.faq-section__title.active {
+    transition-delay: 0.3s;
+}
+
+.faq-section__icon.active {
+    transition-delay: 0.5s;
+}
+
+/* Sequential delays for questions */
+.faq-section__accordion-item:nth-child(1) .faq-section__accordion-question.active {
+    transition-delay: 0.6s;
+}
+
+.faq-section__accordion-item:nth-child(2) .faq-section__accordion-question.active {
+    transition-delay: 0.8s;
+}
+
+.faq-section__accordion-item:nth-child(3) .faq-section__accordion-question.active {
+    transition-delay: 1.0s;
+}
+
+.faq-section__accordion-item:nth-child(4) .faq-section__accordion-question.active {
+    transition-delay: 1.2s;
+}
+
+/* Footer animations */
+.footer-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.footer-slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different delays for each footer column */
+/* About section */
+.footer-about .company-name.active {
+    transition-delay: 0.1s;
+}
+
+.footer-about p.active {
+    transition-delay: 0.3s;
+}
+
+.footer-about .social-links.active {
+    transition-delay: 0.5s;
+}
+
+/* Location section */
+.footer-location h3.active {
+    transition-delay: 0.2s;
+}
+
+.footer-location .map-container.active {
+    transition-delay: 0.4s;
+}
+
+.footer-location .address.active {
+    transition-delay: 0.6s;
+}
+
+/* Contact section */
+.footer-contact h3.active {
+    transition-delay: 0.3s;
+}
+
+.footer-contact .contact-info a:nth-child(1).active {
+    transition-delay: 0.5s;
+}
+
+.footer-contact .contact-info a:nth-child(2).active {
+    transition-delay: 0.7s;
+}
+
+.footer-contact .contact-info a:nth-child(3).active {
+    transition-delay: 0.9s;
+}
+
+/* Hours section */
+.footer-hours h3.active {
+    transition-delay: 0.4s;
+}
+
+.footer-hours .hours-item:nth-child(2).active {
+    transition-delay: 0.6s;
+}
+
+.footer-hours .hours-item:nth-child(3).active {
+    transition-delay: 0.8s;
+}
+
+.footer-hours .hours-item:nth-child(4).active {
+    transition-delay: 1.0s;
+}
+
+/* Footer bottom */
+.footer-bottom p.active {
+    transition-delay: 1.2s;
+}
