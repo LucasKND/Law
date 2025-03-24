@@ -11,9 +11,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('map-background.jpg');
+    background-image: url('');
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0;
     z-index: -1;
 }
 
@@ -230,6 +230,16 @@
 .carousel-nav-btn:disabled:hover {
     transform: none;
     background-color: #666;
+}
+
+/* Remove the carousel dots by hiding the container that holds them */
+.practice-areas .carousel-dots,
+.practice-areas .slider-dots,
+.practice-areas .dots-container,
+.practice-areas .slick-dots,
+.practice-areas .owl-dots,
+.practice-areas .swiper-pagination {
+    display: none !important;
 }
 
 .carousel-dots {
