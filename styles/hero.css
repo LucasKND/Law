@@ -86,13 +86,6 @@
     transform: translateX(15em);
 }
 
-.hero-image {
-    width: 50%;
-    height: 100vh;
-    background-image: url('https://via.placeholder.com/800x1000');
-    background-size: cover;
-    background-position: center;
-}
 
 .wave-overlay {
     position: absolute;

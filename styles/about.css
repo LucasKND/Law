@@ -12,19 +12,6 @@ s.about-section {
     z-index: 2;
 }
 
-/* Background dot pattern */
-.about-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
-    background-size: 15px 15px;
-    opacity: 0.3;
-    z-index: 1;
-}
 
 /* Left side - Image and decorative elements */
 .about-image-container {
